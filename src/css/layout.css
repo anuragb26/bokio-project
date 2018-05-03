@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color:#fff;
+    color:#555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
+}
+
+
+.row-layout{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row-layout:before,
+.row-layout:after {
+    content:"";
+    display:table;
+    clear:both
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+

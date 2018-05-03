@@ -1,0 +1,49 @@
+
+.landing{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('../assets/images/hero.jpg');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    background-attachment:fixed;
+}
+
+.landing .hero-text-box{
+    position: absolute;
+    width:1140px;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.landing .logo{
+    height:40px;
+    width: auto;
+    float:left;
+    margin-top:20px;
+}
+
+
+.landing .btn:link,.btn:visited{
+    display:inline-block;
+    padding: 10px 30px;
+    font-weight:300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition:background-color 2s,border 0.2s,color 0.2s;
+    margin-right: 15px;
+}
+
+.landing .btn:hover,.btn:active{
+    background-color:#cf6d17;
+}
+
+.landing .btn-ghost:link,.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: white;
+}
+
+
+.landing .btn-ghost:hover,.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
