@@ -30,7 +30,7 @@ export class AppClass extends Component {
                   Home
           </Link>
           <Link to="/show">  
-                Save Bank Data
+                Saved Bank Data
           </Link>      
           </nav>
           <main>

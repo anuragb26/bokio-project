@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {SavedDataTable} from "../components";
 import {getTransactions} from '../actions';
+import { Link } from 'react-router-dom';
 
 export class SavedData extends Component{
 
@@ -29,6 +30,7 @@ export class SavedData extends Component{
                 <div className="row-layout center">
                     <div className="col col-1-block">
                         <h2 class="heading">Book-keeping Data</h2>
+                        <h5>Refresh in a while to see newly added data</h5>
                     </div>
                 </div>
                 <div className="row-layout center">
@@ -37,8 +39,9 @@ export class SavedData extends Component{
                         {(Array.isArray(this.state.submittedData)&&
                         this.state.submittedData.length > 0)?(
                             <SavedDataTable
-                            transactionData = {this.state.submittedData ||[{"date":"26/07/1991","text":"My birthday","amount":"10,000rs"}]} />):
-                            (null)
+                            transactionData = {this.state.submittedData} />):
+                            (<div>
+                            </div>)
                         }
                     </div>
                 </div>

@@ -18,6 +18,11 @@ export  class SingleSavedData extends Component{
    toggleActionContainer(){
        this.setState({hidden:!this.state.hidden});
    }
+   dateFormatter(data){
+    const date = new Date('2013-03-10T02:00:00Z');
+    return (date.getFullYear()+'-' + (date.getMonth()+1) + '-'+date.getDate())
+
+   }
     render(){
         const {amount,date,text,index} = this.props;
         return(
@@ -27,11 +32,13 @@ export  class SingleSavedData extends Component{
                                {text}
                             </div>
                             <div className="amount">
-                                {amount}
+                                {new Intl.NumberFormat().format(amount)}
                             </div>
                             <div className="date-flex"> 
                                 <div className="date">
-                                    {date}
+                                    {
+                                        this.dateFormatter(date)
+                                    }
                                 </div>
                                 <div>
                                     {(this.state.hidden)?(<img src={plus} height="25" />):(<img src={minus} height="25" />)}
