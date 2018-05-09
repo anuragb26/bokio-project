@@ -14,10 +14,25 @@ html,body{
     overflow-x:hidden;
 }
 
+body{
+    height:100vh;
+}
 
 .row-layout{
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.m-r-5{
+    margin-right:5%;
+}
+
+.m-b-5{
+    margin-bottom:5%;
+}
+
+.hide{
+    display:none;
 }
 
 .row-layout:before,
@@ -33,4 +48,7 @@ html,body{
 	margin: 1% 0 1% 1.6%;
 }
 
+.col-1-block{
+    width:100%;
+}
 

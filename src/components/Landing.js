@@ -1,19 +1,25 @@
 import React from 'react';
-import '../css/landing.css';
-import logo from '../assets/images/logo.jpeg';
+import '../css/components.css';
+import newdata from '../assets/images/newdata.svg';
+import save from '../assets/images/save.svg';
 import { Link } from 'react-router-dom';
 
 export const Landing = ()=>(
     <div className="landing">
-      <nav>
-          <div className="row-layout">
-              <img src={logo} alt="Omnifood logo" className="logo" />
-          </div>
-      </nav>
-      <div className="hero-text-box">
-                <h1>BOKIO-Accounting made fun</h1>
-                <Link className="btn btn-ghost" to="/save">New Bank Data</Link>
-                <Link className="btn btn-ghost" to="/save">Show Saved Data</Link>
+      
+        <div className="hero-text-box">
+            <h1>BOKIO-Accounting made fun</h1>
+        </div>
+      <div className="flex-landing">
+                    
+                    <div>
+                        <Link className="button" to="/save">  
+                            New Bank Data
+                        </Link>
+                    </div>
+                    <div>
+                        <Link className="button" to="/show">Show Saved Data</Link>
+                    </div>
       </div>
     </div>
 )

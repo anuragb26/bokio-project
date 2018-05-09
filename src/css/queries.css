@@ -1,0 +1,36 @@
+@media screen and (max-width: 480px){
+    .Table {
+        margin-left:0;
+        margin-right:0;
+        width:100%;
+        font-size: 55%;
+      }
+    section{
+        padding:5% !important;
+    }
+    .saved-table{
+        font-size:55%;
+    }
+    h1,h2,h3{
+        font-size: 1em;
+    }
+    .column-mapping{
+        flex-direction:column;
+        align-items:center;
+    }
+    .column-mapping div{
+        margin-bottom:2%;
+    }
+  }
+
+  @media screen and (min-width:480px) and (max-width: 768px){
+    .column-mapping{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .column-mapping div{
+        margin-bottom:3%;
+    }
+
+  }
